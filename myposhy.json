@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#E91E63",
+          "foreground": "#fff",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "template": "θεο "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0c6",
+          "type": "session"
+        },
+        {
+          "background": "green",
+          "foreground": "#fff",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "style": "folder",
+            "template": " \uf07b {{ .Path }} "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0c6",
+          "type": "path"
+        },
+        {
+          "background": "#E53935",
+          "foreground": "#fff",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "branch_icon": "",
+            "template": " \uf7a1 {{ .HEAD }} "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0c6",
+          "type": "git"
+        },
+        {
+          "background": "#906cff",
+          "foreground": "#fff",
+          "leading_diamond": "\ue0c7",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "template": " \ue235 {{ .Venv }} "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0c6",
+          "type": "python"
+        },
+        {
+          "background": "lightMagenta",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#e91e63{{ end }}"
+          ],
+          "foreground": "#ffffff",
+          "leading_diamond": "\ue0c7",
+          "properties": {
+            "always_enabled": true,
+            "template": " <parentBackground></>\ue23a "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0c6",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 1
+}
